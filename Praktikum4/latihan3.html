@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="/Praktikum4/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fi").click(function () { $(".kotak").fadeIn("slow") });
+            $(".fo").click(function () { $(".kotak").fadeOut("slow") });
+            $(".ft").click(function () { $(".kotak").fadeTo("slow", 0.3) });
+        });
+    </script>
+    <style>
+        .kotak {
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotak"></div>
+    <button class="fi">Fade In</button>
+    <button class="fo">Fade Out</button>
+    <button class="ft">Fade To</button>
+
+</body>
+
+</html>
